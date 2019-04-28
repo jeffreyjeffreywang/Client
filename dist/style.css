@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header-container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  transition: 0.4s;
+  color: white;
+  border: 1px solid #278c28;
+  box-shadow: 0px 0px 4px #278c28;
+}
+
+#header #name {
+  padding: 0 10px;
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.navbar {
+  padding: 0 10px;
+  display: flex;
+}
+
+.navbar a {
+  display: block;
+  height: 100%;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  background: #b3b6bc;
+}
+
+#info {
+  display: flex;
+  justify-content: space-between;
+  background-color: #353535;
+  align-item: center;
+  padding: 3px;
+  height: 30px;
+  color: white;
+  border: 1px solid #278c28;
+  box-shadow: 0px 0px 4px #278c28;
+}
+
+#reading_list i {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#ratings i {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#content {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 90px;
+  transition: 0.5s;
+}
+
+#sidenav {
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  width: 400px;
+  z-index: 10;
+  background-color: black;
+  transition: 0.5s;
+}
+
+#sidenav-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #62666d;
+  position: relative;
+  z-index: 12;
+  border: 1px solid #278c28;
+  box-shadow: 0px 0px 2px #278c28;
+}
+
+#sidenav-nav div {
+  display: block;
+  padding: 1px;
+  background-color: #62666d;
+  border: 1px solid #262626; /*#278c28 green*/
+  box-shadow: 0px 0px 2px #278c28;
+  width: 33%;
+  text-align: center;
+  color: white;
+}
+
+#sidenav-nav div:hover {
+  background-color: #e3eaed;
+  cursor: pointer;
+}
+
+#sidenav-content {
+  background-color: black;
+  height: 100%;
+  color: white;
+}
+
+#to_read, #reading, #read {
+    display: none;
+}
+
+#reading-list-elem {
+    padding: 1px;
+    cursor: pointer;
+    color: white;
+}
+
+#reading-list-elem:hover {
+  background-color: #d6d9db;
+  color: black;
+}
+
+#main-content {
+  background-image: linear-gradient(to bottom right, #3ff5ff, #3fff5e);
+  width: 100%;
+}
+
+#ratings-column {
+  background-color: black;
+  display: none;
+  width: 400px;
+  height: 100%;
+  z-index: 10;
+  border: 1px solid #278c28;
+  box-shadow: 0px 0px 2px #278c28;
+  color: white;
+  padding: 10px;
+}
+
+#ratings-column div {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+  color: black;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#ratings-column div:hover {
+  background-color: #bfc0c1;
+  color: white;
+}
+
+#root {
+  z-index: 20;
+  display: none;
+}

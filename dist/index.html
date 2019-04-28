@@ -1,0 +1,100 @@
+<html>
+
+<head>
+  <title>Webstory Reader</title>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Login Page-->
+  <div id="login">
+
+  </div>
+  <!--HEADER-->
+  <div id="header-container">
+    <div id="header">
+      <div id="name">
+        Web Story Reader
+      </div>
+
+      <div class="navbar">
+        <a href="">Login/Sign Up</a>
+        <i class="fa fa-search" style="font-size:24px" onclick="clickSearch()"></i>
+      </div>
+    </div>
+
+    <!--INFO including read list and ratings-->
+    <div id="info">
+      <div id="reading_list">
+        <i class="fa fa-bars" onclick="clickReadingList()"></i>
+        Reading Lists
+      </div>
+
+      <div id="title">
+        Story Title
+      </div>
+      <div id="ratings">
+        Ratings and Reviews
+        <i class="fa fa-bars" onclick="clickRating()"></i>
+      </div>
+    </div>
+  </div>
+
+  <div id="content">
+    <!--Side Navbar-->
+    <div id="sidenav">
+      <div id="sidenav-nav">
+        <div onclick="displayRead(1)">To Read</div>
+        <div onclick="displayRead(2)">Reading</div>
+        <div onclick="displayRead(3)">Read</div>
+      </div>
+      <!--Sidenav content-->
+      <div id="sidenav-content">
+        <div id="to_read">
+          to_read
+        </div>
+        <div id="reading">
+          reading
+        </div>
+        <div id="read">
+          read
+        </div>
+      </div>
+    </div>
+    <!--Story content-->
+    <div id="main-content">
+      Main content
+      <div id="root">
+      </div>
+    </div>
+
+    <!--Ratings & Reviews-->
+    <div id="ratings-column">
+      Ratings
+      <div id="btn-to-read" onclick="updateRead(1)">
+        To Read
+      </div>
+      <div id="btn-mark-read" onclick="updateRead(2)">
+        Mark as Read
+      </div>
+      <div id="btn-drop" onclick="updateRead(3)">
+        Drop
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="utils.js"></script>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
